@@ -1,0 +1,84 @@
+body{
+	margin:0;
+	padding:0;
+	border:0;
+	color:#5fe811;
+	/*text-shadow: 1px 1px 1px white;*/
+	background-color:black;
+}
+#left,#board,#right{
+	margin:0;
+	float:left;
+	text-align:center;
+}
+#left,#right{
+	width:28vw;
+	height:100vh;
+	overflow:hidden;
+}
+#board{
+	width:40vw;
+	background-image:url("../images/radar2.jpg");
+	background-size: 40vw 40vw;
+	background-repeat:no-repeat;
+}
+table{
+	margin: 0 auto;
+	table-layout: auto;
+}
+td{
+	overflow:hidden;
+}
+.field,.hat{
+	margin: 0;
+	padding:0;	
+	font-weight:bolder;
+}
+.field{
+	border:1px #5fe811 solid;
+	overflow: hidden;
+}
+.ship{
+	background-image:url("../images/ship.png");
+	background-repeat:no-repeat;	
+}
+.hit{
+	background-image:url("../images/hit.png");
+	background-repeat:no-repeat;
+}
+.miss{
+}
+h2, #ships, #recordList{
+	margin:0;
+	padding:0;
+	text-align:center;
+	clear:both;
+}
+#ships table, #recordList table{
+	float:left;
+	margin:0;
+	padding: 0 0 0 6vw;
+	text-align:left;
+	font-weight:bolder;
+}
+#record, .messageAlert{
+	position:absolute;
+	display:block;
+	background-color:black;
+	width:40vw;	
+	left:28vw;
+	text-align:center;	
+	border:solid 3px #5fe811;
+	color:#5fe811;
+}
+.messageAlert{
+	height:10vh;
+	top:30vh;
+}
+#record{
+	height:20vh;
+	top:20vh;
+}
+#record input{
+	border:solid 1px #5fe811;
+} 
